@@ -96,7 +96,7 @@
                         <windows>.bat</windows>
                     </binFileExtensions>
                     <useWildcardClassPath>true</useWildcardClassPath>
-                    <extraJvmArguments>-Xms512m -Xmx512m</extraJvmArguments>
+                    <extraJvmArguments>-Xms2048m -Xmx2048m</extraJvmArguments>
                     <repositoryName>lib</repositoryName>
                     <programs>
                         <program>
