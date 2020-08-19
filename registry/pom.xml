@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.nw.project</groupId>
-    <artifactId>registry</artifactId>
+    <artifactId>cms-registry</artifactId>
     <version>1.0.1</version>
     <name>registry</name>
     <description>cms registry</description>
@@ -55,7 +55,7 @@
     </dependencyManagement>
 
     <build>
-        <finalName>registry</finalName>
+        <finalName>CMS_Registry</finalName>
         <resources>
             <resource>
                 <filtering>false</filtering>

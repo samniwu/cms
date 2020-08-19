@@ -11,18 +11,21 @@
     <packaging>pom</packaging>
     <modules>
         <module>registry</module>
-<!--        <module>manager</module>-->
-<!--        <module>domain</module>-->
+        <module>manager</module>
+        <module>common</module>
         <module>job</module>
+        <module>portal</module>
+        <module>service</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
-<!--        <manager.version>0.0.1-SNAPSHOT</manager.version>-->
+        <manager.version>1.0.1</manager.version>
         <registry.version>1.0.1</registry.version>
         <job.version>1.0.1</job.version>
+        <common.version>1.0.1</common.version>
 <!--        <domain.version>0.0.1-SNAPSHOT</domain.version>-->
     </properties>
 

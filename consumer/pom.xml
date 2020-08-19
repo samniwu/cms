@@ -35,7 +35,11 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
-
+        <dependency>
+            <groupId>com.nw.project</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0.1</version>
+        </dependency>
 
     </dependencies>
 

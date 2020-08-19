@@ -1,8 +1,12 @@
 package com.nw.project.job.config;
 
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-@Configuration
+/**
+ * quartz config
+ * @author niwu
+ */
+@Component
 public class QuartzConfig {
 
 }

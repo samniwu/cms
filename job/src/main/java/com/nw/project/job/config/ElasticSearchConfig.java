@@ -1,16 +1,19 @@
 package com.nw.project.job.config;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
+import org.springframework.stereotype.Component;
 
-@Configuration
+/**
+ * elasticsearch config
+ * @author niwu
+ */
+@Component
+@Slf4j
 public class ElasticSearchConfig {
-    private static final Logger LOGGER = LoggerFactory.getLogger(ElasticSearchConfig.class);
     @Autowired
     private ElasticsearchTemplate elasticsearchTemplate;
 
@@ -18,14 +21,14 @@ public class ElasticSearchConfig {
     private String esIndex;
 
     @Bean
-    public void elasticSearchConfig() {
-        LOGGER.info("elasticsearch config start,index:{}",esIndex);
+    public void init() {
+        log.info("elasticsearch config start");
         boolean indexExist = elasticsearchTemplate.indexExists(esIndex);
         if (!indexExist) {
-            LOGGER.info("create index {}", esIndex);
+            log.info("create index {}", esIndex);
             elasticsearchTemplate.createIndex(esIndex);
         }
-        LOGGER.info("create mapping {}");
+        log.info("create mapping {}");
     }
 
 }
