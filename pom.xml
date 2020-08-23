@@ -10,12 +10,12 @@
 
     <packaging>pom</packaging>
     <modules>
-        <module>registry</module>
         <module>manager</module>
         <module>common</module>
         <module>job</module>
         <module>portal</module>
         <module>service</module>
+        <module>cms-registry-service</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
